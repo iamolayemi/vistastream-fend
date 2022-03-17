@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { GetStaticPaths, GetStaticProps } from 'next'
+import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next'
 import Link from 'next/link'
 import { useAppContext } from '../../components/App'
 import { BlogLayout } from '../../components/BlogLayout'
@@ -136,7 +136,7 @@ const articleDetails = ({ article, errors }: Props) => {
     )
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     try {
         const slug = params?.slug as string
 
@@ -161,19 +161,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         return {
             props: { error }
         }
-    }
-}
-
-export const getStaticPaths: GetStaticPaths = async () => {
-    const response = await http.get(`/api/articles`)
-    const articles: IArticle[] = response.data.data
-
-    const slugs = articles.map((article) => article.slug)
-    const paths = slugs.map((slug: string) => ({ params: { slug } }))
-
-    return {
-        paths,
-        fallback: 'blocking'
     }
 }
 

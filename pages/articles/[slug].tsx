@@ -169,7 +169,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     const articles: IArticle[] = response.data.data
 
     const slugs = articles.map((article) => article.slug)
-    const paths = slugs.map((slug) => ({ params: { slug } }))
+    const paths = slugs.map((slug: string) => ({ params: { slug } }))
 
     return {
         paths,

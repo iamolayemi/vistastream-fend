@@ -15,8 +15,7 @@ const Fixtures: NextPage = ({ fallback, error }: any) => {
                 <BreadCrumb title="Upcoming Fixtures" />
                 <Advert placement="header" />
                 <div className="container my-2 mx-auto text-center">
-                <iframe scrolling='no' frameBorder='0' className='iframe-ads' width='728' height='90' src="https://refbanners.com/I?tag=d_1456057m_47143c_&site=1456057&ad=47143" ></iframe>
-            
+                    <iframe scrolling='no' frameBorder='0' className='iframe-ads' width='728' height='90' src="https://refbanners.com/I?tag=d_1456057m_47143c_&site=1456057&ad=47143" ></iframe>
                     <a
                         href="https://https://candytrade.net"
                         target="_blank"
@@ -39,14 +38,14 @@ const Fixtures: NextPage = ({ fallback, error }: any) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const response = await http.get('/api/fixtures')
+    const response = await http.get('/api/events')
 
     const fixtures = await response.data
 
     return {
         props: {
             fallback: {
-                '/api/fixtures': fixtures
+                '/api/events': fixtures
             }
         }
     }

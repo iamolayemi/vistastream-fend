@@ -2,15 +2,6 @@ import Link from 'next/link'
 import Moment from 'react-moment'
 
 const TopNav = () => {
-    // const [clock, setClock] = useState<Date>(new Date())
-
-    // useEffect(() => {
-    //     const clockInterval = setInterval(() => setClock(new Date()), 1000)
-
-    //     return () => {
-    //         clearInterval(clockInterval)
-    //     }
-    // }, [])
 
     return (
         <div className="header-top">
@@ -47,12 +38,12 @@ const TopNav = () => {
                         <div className="right-area">
                             <ul>
                                 <li>
-                                    <Link href="/events">
+                                    <Link href="/fixtures">
                                         <a className="link">
                                             <span className="icon">
                                                 <i className="fas fa-football-ball"></i>
                                             </span>
-                                            Events
+                                            Fixtures
                                         </a>
                                     </Link>
                                 </li>
@@ -66,7 +57,7 @@ const TopNav = () => {
                                         </a>
                                     </Link>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>

@@ -40,7 +40,7 @@ const FixtureDetails = ({ fixture, errors }: Props) => {
                 </li>
             </BreadCrumb>
             <Advert placement="header" />
-            
+
             <BlogLayout>
                 <div className="part-text">
                     <a className="title">{pageTitle}</a>
@@ -59,16 +59,14 @@ const FixtureDetails = ({ fixture, errors }: Props) => {
                         </li>
                     </ul>
 
-                    <Advert placement="fixture_top" />
-
-                    <Advert placement="fixture_top" />
-                    <script data-cfasync="false" type="text/javascript" src="https://www.onclickalgo.com/a/display.php?r=5239055"></script>
 
                     <div className="container mx-auto text-center">
+                        <iframe scrolling='no' frameBorder='0' className='iframe-ads' width='800' height='480' src="https://refbanners.com/I?tag=d_1456057m_45051c_&site=1456057&ad=45051" ></iframe>
+
                         <div className="embed-responsive embed-responsive-4by3">
                             <iframe
                                 className="embed-responsive-item"
-                                src={fixture.stream_source} 
+                                src={fixture.stream_source}
                                 sandbox="allow-scripts allow-same-origin"
                                 id={`Fixture - ${fixture.id}`}
                                 width="600"
@@ -76,13 +74,10 @@ const FixtureDetails = ({ fixture, errors }: Props) => {
                                 frameBorder="0"
                                 allowFullScreen></iframe>
                         </div>
+                        <iframe scrolling='no' frameBorder='0' className='iframe-ads' width='800' height='480' src="https://refbanners.com/I?tag=d_1456057m_45051c_&site=1456057&ad=45051" ></iframe>
+
                     </div>
-                    
-<script data-cfasync="false" type="text/javascript" src="https://www.onclickalgo.com/a/display.php?r=5239055"></script>
 
-                    <Advert placement="fixture_bottom" />
-
-                    <Advert placement="fixture_bottom" />
                     <ShareButtons />
                 </div>
             </BlogLayout>

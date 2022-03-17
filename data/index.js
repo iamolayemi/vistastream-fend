@@ -1,0 +1,17 @@
+export const systemSettings = {
+    site_name: 'VistaStreams',
+    description: 'Watch soccer Live, Live scores, Results, Standings',
+    keywords: 'Watch soccer Live, Live scores, Results, Standings',
+    contact_phone: '09128486351',
+    contact_email: 'support@vistastreams.xyz',
+    facebook_url: 'https://facebook.com',
+    twitter_url: 'https://twitter.com',
+    instagram_url: 'https://instagram.com',
+    hero_title: 'Welcome to VistaStreams',
+    hero_subtitle: 'Watch every football matches everywhere',
+    hero_description: 'Watch soccer Live, Live scores, Results, Standings',
+    about_text: 'Watch soccer Live, Live scores, Results, Standings',
+    footer_disclaimer: 'Disclaimer : This stream found for free on the int...',
+    header_analytics_code: '',
+    footer_analytics_code: '',
+}

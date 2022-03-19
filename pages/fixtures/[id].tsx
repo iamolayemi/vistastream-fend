@@ -61,8 +61,7 @@ const FixtureDetails = ({ fixture, errors }: Props) => {
 
 
                     <div className="container mx-auto text-center">
-                        <iframe scrolling='no' frameBorder='0' className='iframe-ads' width='800' height='480' src="https://refbanners.com/I?tag=d_1456057m_45051c_&site=1456057&ad=45051" ></iframe>
-
+                      
                         <div className="embed-responsive embed-responsive-4by3">
                             <iframe
                                 className="embed-responsive-item"
@@ -75,8 +74,7 @@ const FixtureDetails = ({ fixture, errors }: Props) => {
                                 allowFullScreen></iframe>
                         </div>
                         
-                        <iframe scrolling='no' frameBorder='0' className='iframe-ads' width='800' height='480' src="https://refbanners.com/I?tag=d_1456057m_45051c_&site=1456057&ad=45051" ></iframe>
-
+                      
                     </div>
 
                     <ShareButtons />

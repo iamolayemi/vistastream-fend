@@ -86,7 +86,6 @@ const articleDetails = ({ article, errors }: Props) => {
                     </ul>
                     <Advert placement="post_top" />
                     <div className="my-2 mx-auto text-center">
-                    <iframe scrolling='no' frameBorder='0' className='iframe-ads' width='800' height='480' src="https://refbanners.com/I?tag=d_1456057m_45051c_&site=1456057&ad=45051" ></iframe>
                         <a
                             href="https://candytrade.net"
                             target="_blank"
@@ -124,7 +123,6 @@ const articleDetails = ({ article, errors }: Props) => {
                             />
                         </a>
 
-                        <iframe scrolling='no' frameBorder='0' className='iframe-ads' width='800' height='480' src="https://refbanners.com/I?tag=d_1456057m_45039c_&site=1456057&ad=45039" ></iframe>
                     </div>
 
                     <Advert placement="post_bottom" />

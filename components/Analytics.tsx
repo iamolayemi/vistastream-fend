@@ -28,6 +28,13 @@ const Analytics = () => {
                 async
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7133507716736950" />
 
+
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: `
+                        (function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',4950917,document.body||document.documentElement)`
+                }}
+            />
         </>
     )
 }

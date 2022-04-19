@@ -74,7 +74,7 @@ const FixtureDetails = ({ fixture, errors }: Props) => {
                 allowFullScreen></iframe>
             </div>
 
-            <div className='alert alert-info pt-2 pb-2 mt-2'>
+            <div className='alert alert-info pt-2 pb-2 mt-2 text-left'>
               If lagging(slow) please change your browser to desktop mode, then double tap the play button to start the
               stream
             </div>
